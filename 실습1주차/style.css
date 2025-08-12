@@ -1,0 +1,119 @@
+/* 전체 선택자 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 태그 선택자 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-header {
+    background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    min-height: 150px;
+    color: white
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+} 
+
+.sidebar{
+    position: absolute;
+    top: 162px;
+    left: 20px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
+
+
+.sidebar nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li{
+    margin-bottom: 12px;
+}
+
+.sidebar nav ul li a{
+    display: block;
+    padding: 10px 15px;
+    background-color: #16ee0b;
+    border: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;    
+}
+
+
+.signup-form{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.signup-form > form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 300px;
+}
+
+.signup-form label + input {
+    margin-bottom: 10px;
+    
+}
+
+.signup-form button{
+    padding: 12px 20px;
+    background-color: #16ee0b;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.signup-form button:hover{
+    background-color: green;
+    transform: translateY(-2px);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer p ~ p{
+    margin-top: 10px;
+}
